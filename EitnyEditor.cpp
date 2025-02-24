@@ -136,3 +136,5 @@ void EitnyEditor::replaceText() {
         }
     }
 }
+
+
