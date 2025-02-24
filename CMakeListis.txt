@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.14)
+project(EitnyEditor)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+set(Qt6_DIR "C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6") 
+find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
+
+
+find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
+
+add_executable(EitnyEditor main.cpp EitnyEditor.cpp)
+
+target_link_libraries(EitnyEditor PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
